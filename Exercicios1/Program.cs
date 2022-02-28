@@ -34,6 +34,17 @@ namespace Exercicios1
 
             var Total = T1 + T2;
             Console.Write("TOTAL A PAGAR R$: "+Total.ToString("F2",CultureInfo.InvariantCulture));
+            Console.WriteLine();
+            /*Faça um programa para ler o valor do raio de um círculo, e depois mostrar o valor da área deste círculo com quatro 
+             casas decimais
+            */
+            double raio = 0;
+            double pi = 3.14159;
+ 
+            Console.Write("Informe o valor do raio:");
+            raio = double.Parse(Console.ReadLine());
+            double area = pi * raio * raio;
+            Console.WriteLine("O valor da da area é: "+area.ToString("F4",CultureInfo.InvariantCulture));
 
         }
     }
